@@ -5,7 +5,7 @@ FILES=[
 "test_word.txt",
 "test_def.txt",
 "transformer_baseline.txt",
-"unified.txt.txt",
+"unified.txt",
 "unified_share.txt"]
 
 
