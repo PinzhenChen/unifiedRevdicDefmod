@@ -17,7 +17,8 @@ The two papers above used data from different sources. Unfortunately, we do not 
 ### Run
 
 ```
-    conda env create -f environment.yml
+    conda env create -f environment.yml # creates a conda environment named 
+"unified" which has the packages needed to run the code
 ```
 
 ```
