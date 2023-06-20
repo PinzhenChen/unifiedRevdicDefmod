@@ -15,12 +15,10 @@ The two papers above used data from different sources. Unfortunately, we do not 
 - definition modelling in English: [CHANG](https://aclanthology.org/D19-1627/)
 
 ### Run
-
+Creates a conda environment named "unified" which has the packages needed to run the code
 ```
-    conda env create -f environment.yml # creates a conda environment named 
-"unified" which has the packages needed to run the code
+    conda env create -f environment.yml
 ```
-
 ```
     # unified model with shared word embeddings and output layer.
     python code/train_unfied_share.py \
