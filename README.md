@@ -14,6 +14,29 @@ The two papers above used data from different sources. Unfortunately, we do not 
 - reverse dictionary in English: [HILL](https://github.com/thunlp/MultiRD)
 - definition modelling in English: [CHANG](https://aclanthology.org/D19-1627/)
 
+### Run
+
+```
+    conda env create -f environment.yml
+```
+
+```
+    # unified model with shared word embeddings and output layer.
+    python code/train_unfied_share.py \
+      --batch_size ${BSZ} \
+      --save_dir ${SAVE_MODEL_DIR} \
+      --summary_logdir ${SAVE_LOG_DIR} \
+      --do_train \
+      --train_file ${TRAIN_FILE} \
+      --dev_file ${DEV_FILE} \
+      --embedding_arch ${ARCH} \ # (sgns, char, electra, bert)
+      --device ${DEVICE} \
+      --do_pred \
+      --test_file ${TEST_FILE} \
+      --pred_file ${SAVE_PRED_DIR} \
+      --pred_direction ${DIRECTION} \ # (embedding, definition)
+      --skip
+```
 
 ### References
 
